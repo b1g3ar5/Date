@@ -1,0 +1,13 @@
+Name:                date
+Version:             0.0
+Description:         A few date conversion routines
+License:             GPL
+License-file:        LICENSE
+Author:              Nick Straw
+Maintainer:          nick@broxholme.com
+Build-Type:          Simple
+Cabal-Version:       >=1.2
+Library
+  Exposed-modules:   Date
+  Build-Depends:     base >= 3 && < 5, old-time, time
+  ghc-options:       -Wall  
