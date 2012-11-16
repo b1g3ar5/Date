@@ -14,7 +14,7 @@ clock2UTC clktm = UTCTime (fromGregorian yy mm dd) dt
                 where
                     caltm = toUTCTime clktm
                     yy = toInteger $ ctYear caltm
-                    mm = fromEnum $ ctMonth caltm
+                    mm = 1 + (fromEnum $ ctMonth caltm)
                     dd = ctDay caltm
                     hh = toInteger $ ctHour caltm
                     mmm = toInteger $ ctMin caltm
